@@ -1,6 +1,7 @@
-const GetAllUserDB = require("../../lib/Category/GetAllUserDB");
+const GetAllCategoryDB = require("../../lib/Category/GetAllCategoryDB")
+
 const GetAllCategory = async (req, res) => {
-    const result = await GetAllUserDB(useremail,seacrhValue,itemPerPage,pageNumber)
+    const result = await GetAllCategoryDB()
     res.send(result)
 }
 module.exports = GetAllCategory

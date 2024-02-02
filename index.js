@@ -26,7 +26,7 @@ app.use(globalErrorHandler);
 const main=async ()=>{
     await connectDB()
     app.listen(port, () => {
-        console.log(`CareerHunt Server is running on port ${port}`);
+        console.log(`dua app Server is running on port ${port}`);
     });
    
 }
