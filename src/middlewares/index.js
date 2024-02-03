@@ -9,7 +9,7 @@ app.use(cors({
     origin: [
         LOCAL_CLIENT,
         CLIENT,
-        '','http://localhost:3000/'
+        '','http://localhost:3000'
     ],
     credentials: true,
     optionSuccessStatus: 200
