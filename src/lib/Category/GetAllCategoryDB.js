@@ -1,9 +1,12 @@
 const Category = require("../../models/Category");
 
-const GetAllCategoryDB = async () => {
+const GetAllCategoryDB = async (category) => {
     try {
-        // const query = { role: { $regex: `${seacrhValue}`, $options: 'i' } };
-        return await Category.find({})
+        let query = {}
+        if (category) {
+            query = { cat_name_en: { $regex: `${category}`, $options: 'i' } };
+        }
+        return await Category.find(query)
     } catch (error) {
         return { success: false, error: error };
     }

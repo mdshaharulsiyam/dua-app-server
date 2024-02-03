@@ -1,7 +1,8 @@
 const GetAllCategoryDB = require("../../lib/Category/GetAllCategoryDB")
 
 const GetAllCategory = async (req, res) => {
-    const result = await GetAllCategoryDB()
+    const {category} = req.query;
+    const result = await GetAllCategoryDB(category)
     res.send(result)
 }
 module.exports = GetAllCategory
