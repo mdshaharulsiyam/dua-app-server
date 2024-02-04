@@ -33,11 +33,43 @@ const DuaSchema = new Schema({
         type: String,
         required: false
     },
+    "dua_arabic": {
+        type: String,
+        required: false
+    },
+    "dua_indopak": {
+        type: String,
+        required: false
+    },
+    "clean_arabic": {
+        type: String,
+        required: false
+    },
+    "transliteration_bn": {
+        type: String,
+        required: false
+    },
+    "transliteration_en": {
+        type: String,
+        required: false
+    },
+    "translation_en": {
+        type: String,
+        required: false
+    },
+    "translation_bn": {
+        type: String,
+        required: false
+    },
     "refference_bn": {
         type: String,
         required: false
     },
     "refference_en": {
+        type: String,
+        required: false
+    },
+    "audio": {
         type: String,
         required: false
     },
